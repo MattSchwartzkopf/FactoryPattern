@@ -30,3 +30,5 @@ public abstract class LetsEat {
 		shop.orderCone("Strawberry");
 	}
 }
+// Decorator Pattern usage
+// We can also decorate a cone by passing the flavor as a decorator object.
