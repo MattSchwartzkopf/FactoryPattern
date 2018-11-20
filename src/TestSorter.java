@@ -6,6 +6,7 @@ public class TestSorter {
 		String[] elements = { "beta", "chi", "alpha", "zeta", "nu", "mu" };
 		
 		// Selection Sort
+		System.out.println("\nSelection Sort\n--------------");
 		SortFactory factory = new NonRecursive();
 		factory.setFactory("Selection");
 
@@ -17,6 +18,7 @@ public class TestSorter {
 			System.out.println(elements[i]);
 		
 		// Insertion Sort
+		System.out.println("\nInsertion Sort\n--------------");
 		String[] elementsInsertion = { "beta", "chi", "alpha", "zeta", "nu", "mu" };
 		factory.setFactory("Insertion");
 
