@@ -1,4 +1,4 @@
-ccc/**
+/**
  * An interface for a sorting algorithm.
  */
 

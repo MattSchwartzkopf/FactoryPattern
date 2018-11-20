@@ -1,10 +1,16 @@
 
-public class DairyQueen extends IceCreamShop {
-
-	@Override
+public abstract class DairyQueen extends IceCreamShop {
+	
 	public IceCream getIceCream(String type) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		IceCream cone = null;
 
+		if (type.equals("Chocolate"))
+			cone = new Chocolate();
+		else if (type.equals("Strawberry"))
+			cone = new Strawberry();
+		else if (type.equals("Vanilla"))
+			cone = new Vanilla();
+
+		return cone;
+	}
 }

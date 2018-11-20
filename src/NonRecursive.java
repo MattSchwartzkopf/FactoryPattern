@@ -1,10 +1,14 @@
 
 public class NonRecursive extends SortFactory {
 
-	@Override
+	protected SortingAlgorithm algorithm;
+	
 	public SortingAlgorithm getAlgorithm() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		return this.algorithm;
+	} 
 
+	public void setFactory(SortingAlgorithm algorithm) {
+		this.algorithm = algorithm;
+	}
+	
 }
