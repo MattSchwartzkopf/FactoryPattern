@@ -6,7 +6,7 @@ public class Insertion implements SortingAlgorithm {
 		for (int p = 1; p < items.length; p++) {
 			Object temp = items[p];
 
-			for (j = p; j > 0 && items[j - 1] > temp; j--)
+			for (j = p; ((Comparable) items[j]).compareTo(temp) > 0; j--)
 				items[j] = items[j - 1];
 
 			items[j] = temp;
