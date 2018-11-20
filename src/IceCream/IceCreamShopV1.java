@@ -1,13 +1,13 @@
-import IceCream.DairyQueen;
-import IceCream.IceCream;
-import IceCream.IceCreamFactory;
-import IceCream.IceCreamShopV1;
+package IceCream;
+/**
+ * Demonstration of the Factory pattern
+ */
 
-public abstract class LetsEat {
-	
-	private DairyQueen factory;
+public class IceCreamShopV1 {
 
-	public LetsEat(DairyQueen factory) {
+	private IceCreamFactory factory;
+
+	public IceCreamShopV1(IceCreamFactory factory) {
 		this.factory = factory;
 	}
 
@@ -26,7 +26,5 @@ public abstract class LetsEat {
 		IceCreamShopV1 shop = new IceCreamShopV1(factory);
 
 		shop.orderCone("Chocolate");
-		shop.orderCone("Vanilla");
-		shop.orderCone("Strawberry");
 	}
 }
